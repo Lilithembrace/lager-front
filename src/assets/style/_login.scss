@@ -1,0 +1,36 @@
+.container{
+    background-color: $gray;
+}
+.login-header{
+    @include div_attrs($green, 100%, 100px, table, auto);
+    h1{
+        @include verticaly_centred(center, table-cell, middle, $gray);
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+.login-body{
+    @include div_attrs($gray, 100%, auto, block, 50px auto 0);
+    #login{
+        input{
+            @include div_attrs($white, 320px, 25px, block, 10px auto);
+            padding: 10px;
+            border-radius: 3px;
+            border: none;
+            &::placeholder{
+                color: $green;
+                
+            }
+            &.submit-button{
+                height: 50px;
+                width: 180px;
+                background-color: $green;
+                color:$gray;
+                text-transform: uppercase;
+                font-size: 18px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}

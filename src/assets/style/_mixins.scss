@@ -1,0 +1,14 @@
+@mixin div_attrs($bg-color, $width, $height, $display, $margin) {
+    background-color: $bg-color;
+    width: $width;
+    height: $height;
+    display: $display;
+    margin: $margin;
+}
+@mixin verticaly_centred($text-align, $display, $vertical-align, $font-color){
+    text-align: $text-align;
+    display: $display;
+    vertical-align: $vertical-align;
+    color: $font-color;
+    //Div of text must be displayed as table.
+}
